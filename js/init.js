@@ -39,3 +39,13 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  let userInfo = localStorage.getItem('userInfo');
+  if (!userInfo){
+    return;
+  }
+
+  let p = document.getElementById('UserEmailDisplay');
+  p.innerText = userInfo;
+})

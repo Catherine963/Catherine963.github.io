@@ -20,10 +20,16 @@ document.getElementById('registro').addEventListener('submit', function(evento){
     else {
             // si todo lo anterior es correcto entonces:
             showAlertSuccess();
+            saveUserInfo(email.value);
             evento.preventDefault();// Para que se muestre la alerta de suceso.
         }
 
 });
+// Se agrega una funcion que gurada los datos ingresando en el email
+function saveUserInfo(email){
+    localStorage.setItem('userInfo', email)
+
+}
 
 // Funciones para mostrar alerta de error o correcto
 function showAlertSuccess() {
@@ -38,3 +44,5 @@ document.getElementById("alert-danger-email").classList.add("show");
 function showAlertErrorContrasena() {
     document.getElementById("alert-danger-contrasena").classList.add("show");
     }
+
+
