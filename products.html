@@ -30,6 +30,9 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
+        <!-- Se muestra el email ingresado en la barra de navegacion -->
+        <li class="nav-item"><p class="text-white mt-2 mb-0" id="UserEmailDisplay"></p>
+       </li>
           <li class="nav-item">
           </li>
         </ul>
@@ -46,14 +49,14 @@
     </div>
     <div class="row">
       <div class="col text-end">
-
+          <!-- Se agrega el id para identificar los filtros-->
         <div class="btn-group btn-group-toggle mb-4" data-bs-toggle="buttons">
           <input type="radio" class="btn-check" name="options" id="sortAsc">
-          <label class="btn btn-light" for="sortAsc">A-Z</label>
+          <label class="btn btn-light" for="sortAsc" id="labelSortAsc"><i class="fas fa-sort-amount-up mr-1"></i>$</label>
           <input type="radio" class="btn-check" name="options" id="sortDesc">
-          <label class="btn btn-light" for="sortDesc">Z-A</label>
+          <label class="btn btn-light" for="sortDesc" id="labelSortDesc"><i class="fas fa-sort-amount-down mr-1"></i>$</label>
           <input type="radio" class="btn-check" name="options" id="sortByCount" checked>
-          <label class="btn btn-light" for="sortByCount"><i class="fas fa-sort-amount-down mr-1"></i></label>
+          <label class="btn btn-light" for="sortByCount" id="labelSortRel"><i class="fas fa-sort-amount-down mr-1"></i>Rel</label>
         </div>
       </div>
     </div>
