@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav w-100 justify-content-between">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Inicio</a>
+            <a class="nav-link" href="portada.html">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="categories.html">Categorías</a>
@@ -30,9 +30,16 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
-           <!-- Se muestra el email ingresado en la barra de navegacion -->
-           <li class="nav-item"><p class="text-white mt-2 mb-0" id="UserEmailDisplay"></p>
-          </li>
+            <!-- Se modifica la barra de navegacion para que se muestren las opciones de menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="text-white mt-2 mb-0" id="UserEmailDisplay"></span></a>
+              <div class="dropdown-menu">
+                
+                <a class="dropdown-item" href="cart.html">Mi carrito</a>
+                <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+                <a class="dropdown-item" href="index.html">Cerrar sesion</a>
+              </div>
+            </li>
         </ul>
       </div>
     </div>
