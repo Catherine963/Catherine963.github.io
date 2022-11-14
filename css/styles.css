@@ -192,3 +192,7 @@ a.custom-card:hover {
 .text-white {
   color: white;
 }
+
+.border-top-3px {
+  border-top: 3px solid #000
+}
