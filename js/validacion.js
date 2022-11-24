@@ -42,7 +42,7 @@ document.getElementById("alert-danger-email").classList.add("show");
 }
 
 function showAlertErrorContrasena() {
-    document.getElementById("alert-danger-contrasena").classList.add("show");
-    }
+document.getElementById("alert-danger-contrasena").classList.add("show");
+}
 
 

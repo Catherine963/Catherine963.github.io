@@ -44,11 +44,12 @@
           <li class="nav-item">
             <a class="nav-link" href="sell.html">Vender</a>
           </li>
-           <!-- Se modifica la barra de navegacion para que se muestren las opciones de menu -->
-           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><span class="text-white mt-2 mb-0" id="UserEmailDisplay"></span></a>
+          <!-- Se modifica la barra de navegacion para que se muestren las opciones de menu -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false"><span class="text-white mt-2 mb-0" id="UserEmailDisplay"></span></a>
             <div class="dropdown-menu">
-              
+
               <a class="dropdown-item" href="cart.html">Mi carrito</a>
               <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
               <a class="dropdown-item" href="index.html">Cerrar sesion</a>
@@ -59,11 +60,60 @@
     </div>
   </nav>
   <main>
-    <div class="container">
-      <div class="alert alert-danger text-center" role="alert">
-        <h4 class="alert-heading">Funcionalidad en desarrollo</h4>
-      </div>
+    <div class="text-left p-4 container">
+      <h2>Perfil</h2>
+      <hr />
+
+      <form action="" id="form-perfil" class="form needs-validation" novalidate>
+        <div class="row">
+          <div class="col form-input">
+            <label for="primerNombreInput" class="form-label">Primer nombre</label>
+            <input type="text" class="form-control" id="primerNombreInput" required>
+            <div class="invalid-feedback">
+              Ingrese su nombre
+            </div>
+          </div>
+          <div class="col form-input">
+            <label for="segundoNombreInput" class="form-label">Segundo nombre</label>
+            <input type="text" class="form-control" id="segundoNombreInput">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-input">
+            <label for="primerApellidoInput" class="form-label">Primer apellido</label>
+            <input type="text" class="form-control" id="primerApellidoInput" required>
+            <div class="invalid-feedback">
+              Ingrese su apellido
+            </div>
+          </div>
+          <div class="col form-input">
+            <label for="segundoApellidoInput" class="form-label">Segundo apellido</label>
+            <input type="text" class="form-control" id="segundoApellidoInput">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col form-input">
+            <label for="emailInput" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="emailInput">
+          </div>
+          <div class="col form-input">
+            <label for="telefonoInput" class="form-label">Teléfono de contacto</label>
+            <input type="text" class="form-control" id="telefonoInput" required>
+            <div class="invalid-feedback">
+              Ingrese su teléfono de contacto
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4 mb-2">
+          <div class="col-12">
+            <hr/>
+            <button class="btn btn-primary" type="submit">Guardar cambios</button>
+          </div>
+        </div>
+      </form>
+      
     </div>
+
   </main>
   <footer class="text-muted">
     <div class="container">
